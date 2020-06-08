@@ -20,7 +20,7 @@ export class TodoItemComponent implements OnInit, OnDestroy {
         // console.log(this.todos);
       }
     );
-    // this.todos = this.todoService.getTodos();
+    this.todos = this.todoService.getTodos();
   }
   toggleCompleted(todo: Todo) {
     const ind = this.todos.indexOf(todo);

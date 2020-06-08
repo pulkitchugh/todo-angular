@@ -5,7 +5,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.navigation-container{
+  width:20%;
+  height: 100%;
+  float:left;
+}
+.navigation-container ul li {
+  cursor: pointer;
+  background: #e6e6e6;
+  padding:0.3rem;
+}
+.right-container{
+  width:80%;
+  float:left;
+}
 header {
   font-size: 1.5rem;
   margin-top: 10vh;
