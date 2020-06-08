@@ -1,0 +1,10 @@
+<div class="todo-container">
+  <ul class="todo-list">
+
+    <div class="todo" *ngFor="let todo of completedTodos">
+      <li class="todo-item" [ngClass]="{'completed': todo.todoCompleted}">
+        {{todo.todoLabel}}</li>
+    </div>
+
+  </ul>
+</div>
