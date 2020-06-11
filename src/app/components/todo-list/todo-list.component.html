@@ -1,5 +1,5 @@
 <form (ngSubmit)="enterTodo(todoForm)" #todoForm="ngForm">
-  <input type="text" id="todoInput" class="todo-input" placeholder="enter your task here" name="todoInput" ngModel
+  <input type="text" id="todoInput" class="todo-input" placeholder="Enter your task here" name="todoInput" ngModel
     #todoInpRef='ngModel' required />
 <!--  <button *ngIf="todoInpRef.valid" class="todo-button" type="submit">-->
      <button [disabled]="!todoInpRef.valid" class="todo-button" type="submit">
