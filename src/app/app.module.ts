@@ -7,6 +7,10 @@ import { AppComponent } from "./app.component";
 import { TodoListComponent } from "./components/todo-list/todo-list.component";
 import { TodoItemComponent } from "./components/todo-list/todo-item/todo-item.component";
 import { TodoCompletedComponent } from './components/todo-completed/todo-completed.component';
+import { StatsComponent } from './components/stats/stats.component';
+
+import { HighchartsChartModule } from 'highcharts-angular';
+
 
 const appRoutes: Routes = [{
   path:"",
@@ -14,11 +18,15 @@ const appRoutes: Routes = [{
 },{
   path:"completed",
   component: TodoCompletedComponent
-}]
+},
+  {
+    path:"stats",
+    component:StatsComponent
+  }]
 
 @NgModule({
-  declarations: [AppComponent, TodoListComponent, TodoItemComponent, TodoCompletedComponent],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
+  declarations: [AppComponent, TodoListComponent, TodoItemComponent, TodoCompletedComponent, StatsComponent],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), HighchartsChartModule],
   providers: [],
   bootstrap: [AppComponent],
 })

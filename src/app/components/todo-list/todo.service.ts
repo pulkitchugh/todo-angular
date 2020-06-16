@@ -31,4 +31,11 @@ export class TodoService {
       this.todosUpdated.next(this.todos.slice());
     }, 300);
   };
+  countCompletedTodos = () => {
+    let count = 0;
+    this.todos.filter(todo=>{
+      count = (todo.todoCompleted) ? count+1 : count;
+    })
+    return count;
+  }
 }
